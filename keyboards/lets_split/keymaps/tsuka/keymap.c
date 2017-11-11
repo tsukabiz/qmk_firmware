@@ -76,19 +76,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Raise
  * ,-----------------------------------------------. ,-----------------------------------------------.
- * |       |   `   |       |       |   |   |       | |   *   |   7   |   8   |   9   |   =   |  Del  |
+ * |       |   `   |       |       |       |   $   | |   *   |   7   |   8   |   9   |   =   |  Del  |
  * |-------+-------+-------+-------+-------+-------| |-------+-------+-------+-------+-------+-------|
- * |       |       |       |       |   $   |       | |   +   |   4   |   5   |   6   |   -   | Enter |
+ * |       |       |       |       |       |   |   | |   +   |   4   |   5   |   6   |   -   | Enter |
  * |-------+-------+-------+-------+-------+-------| |-------+-------+-------+-------+-------+-------|
- * |       |       |       |       |   ^   |       | |   0   |   1   |   2   |   3   |   /   |       |
+ * |       |       |       |       |       |   ^   | |   0   |   1   |   2   |   3   |   /   |       |
  * |-------+-------+-------+-------+-------+-------| |-------+-------+-------+-------+-------+-------|
  * |       |       |  PgUp |  PgDn |       |       | |       | ***** | ^PgUp | ^PgDn |       |       |
  * `-----------------------------------------------' `-----------------------------------------------'
  */
 [_RAISE] = KEYMAP( \
-  XXXXXXX, KC_GRV,  XXXXXXX, XXXXXXX, KC_PIPE, XXXXXXX, KC_ASTR, KC_7,    KC_8,    KC_9,    KC_EQL,  KC_DEL,  \
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_DLR,  XXXXXXX, KC_PLUS, KC_4,    KC_5,    KC_6,    KC_MINS, _______, \
-  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_CIRC, XXXXXXX, KC_0,    KC_1,    KC_2,    KC_3,    KC_SLSH, XXXXXXX, \
+  XXXXXXX, KC_GRV,  XXXXXXX, XXXXXXX, XXXXXXX, KC_DLR,  KC_ASTR, KC_7,    KC_8,    KC_9,    KC_EQL,  KC_DEL,  \
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PIPE, KC_PLUS, KC_4,    KC_5,    KC_6,    KC_MINS, _______, \
+  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_CIRC, KC_0,    KC_1,    KC_2,    KC_3,    KC_SLSH, XXXXXXX, \
   XXXXXXX, XXXXXXX, KC_PGUP, KC_PGDN, XXXXXXX, XXXXXXX, XXXXXXX, _______, CTLPGUP, CTLPGDN, XXXXXXX, XXXXXXX  \
 ),
     
