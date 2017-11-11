@@ -46,7 +46,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-------+-------+-------+-------+-------+-------| |-------+-------+-------+-------+-------+-------|
  * | Shift |  ; :  |   Q   |   J   |   K   |   X   | |   B   |   M   |   W   |   V   |   Z   | Shift |
  * |-------+-------+-------+-------+-------+-------| |-------+-------+-------+-------+-------+-------| 
- * |ScrShot|       | Left  | Right |Low/F13|Alt/Del| |Ctl/Spc|Rai/F14|   Up  |  Down |       |PastVlu| F13=Jp, F14=En
+ * |ScrShot|       | Left  | Right |Low/F13|Alt/Del| |Ctl/Spc|Rai/F14|   Up  |  Down |       |PastVlu|
  * `-----------------------------------------------' `-----------------------------------------------' 
  */
 [_DVORAK] = KEYMAP( \
@@ -126,7 +126,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       } else {
         layer_off(_RAISE);
         if (another_key_pressed == false) {
-          register_code (KC_F14);
+          register_code (KC_F14);   //Switch to English input mode
           unregister_code (KC_F14);
         }
       }
@@ -140,7 +140,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       } else {
         layer_off(_LOWER);
         if (another_key_pressed == false) {
-          register_code (KC_F13);
+          register_code (KC_F13);   //Switch to Japanese input mode
           unregister_code (KC_F13);
         }
       }
